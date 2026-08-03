@@ -1,0 +1,108 @@
+/* Core additions for the hardware link animations */
+.connection {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.connection.running::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  animation: dataStream 0.8s linear infinite;
+}
+
+@keyframes dataStream {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Developer dashboard layout adjustments */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24293e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aa3bff;
+}
+
+/* Animation token pipeline tracking styles */
+.pulsing-data-token {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  animation: dataGlow 0.4s alternate infinite ease-in-out;
+}
+
+@keyframes dataGlow {
+  0% {
+    r: 3px;
+  }
+  100% {
+    r: 5.5px;
+  }
+}
+
+/* Base structural setups for custom scrolling blocks */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24293e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aa3bff;
+}
+
+/* Custom core execution streaming style maps */
+.pulsing-data-token {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 1));
+}
+
+body {
+  margin: 0;
+  background-color: #0a0b10;
+}
+
+/* Custom scrollbars inside layout modules */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050508;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f202e;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
